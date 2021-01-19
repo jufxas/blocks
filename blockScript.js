@@ -4,12 +4,6 @@
 // CODE IS DONE. NO BUGS SEEN CUZ IDK
 // A LOT OF THINGS ARE STILL CONSOLE LOGGED BUT THATS FINE WITH ME BECAUSE IDK IF THERE ARE ANY BUGS
 
-import {
-	interpretShorthands,
-	oneLetterCols,
-	twoLetterCols,
-} from "./instructionMaker.js";
-
 let instructions = {};
 let userInstructionsGiven = false;
 let latestClickedButton;

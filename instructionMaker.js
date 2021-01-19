@@ -1,7 +1,7 @@
 // WATCH OUT FOR OVERLAPPING LETTERS CAUSED BY YOURSELF
 // yes i am aware of how condenscending that comment was but lol
 
-export let twoLetterCols = {
+let twoLetterCols = {
 	// MAX character length should be 2
 	purple: {
 		short: "pu",
@@ -23,7 +23,7 @@ export let twoLetterCols = {
 		rgb: "rgb(0, 0, 0)",
 	},
 };
-export let oneLetterCols = {
+let oneLetterCols = {
 	//  SPACING REQUIRED !!!
 	red: ["r", "red", "rgb(255, 0, 0)"],
 	orange: ["o", "orange", "rgb(255, 165, 0)"],
@@ -37,7 +37,7 @@ export let oneLetterCols = {
 	default: ["d", "default"], // default outer = black, default inner = none
 };
 
-export function interpretShorthands(code) {
+function interpretShorthands(code) {
 	code = code.split("/").join("").split("-");
 
 	let splitUp = [];
