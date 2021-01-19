@@ -28,6 +28,7 @@ case {
 	height: 750px;
 	/* 650px would make it more even but that text generator should be around there ... */
 	border: 1px solid black;
+	padding-bottom: 50px; /* here because menu button made it go bad when you pressed on a rectangle*/
 }
 
 .rectangle {
@@ -64,4 +65,114 @@ case {
 	border: 1px solid black;
 	padding-bottom: 3px;
 	display: flex;
+}
+
+#menu {
+	font-family: "Press Start 2P", cursive;
+	display: contents;
+	font-size: 50px;
+}
+
+#menuPadding {
+	padding-top: 10px;
+	background: #ffc700;
+}
+#startGame {
+	padding: 0;
+	border: none;
+	background: none;
+	display: inline;
+	background: #ffc700;
+}
+
+#play {
+	display: inline;
+	background: #ffc700;
+}
+
+#YESCODE {
+	font-family: "Press Start 2P", cursive;
+	background: green;
+	border: transparent;
+	color: white;
+	display: inline-block;
+	padding: 50px;
+	font-size: 50px;
+}
+#NOCODE {
+	font-family: "Press Start 2P", cursive;
+	background: red;
+	border: transparent;
+	color: white;
+	display: inline-block;
+	padding: 50px;
+	font-size: 50px;
+}
+
+#enterCode {
+	display: inline;
+	font-size: 25px;
+	background: white;
+	font-family: "Press Start 2P", cursive;
+}
+
+#submitCode {
+	display: inline-block;
+	padding: 30px;
+	font-size: 25px;
+	background: purple;
+	color: white;
+	font-family: "Press Start 2P", cursive;
+}
+
+#secondPagePadding {
+	padding-top: 100px;
+	background: #ffc700;
+}
+
+#genCode {
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid white;
+	color: white;
+	display: block;
+	margin-left: 10px;
+	margin-top: 10px;
+	background: #0085ff;
+	font-size: 25px;
+}
+#containerForCodeGetter {
+	display: block;
+	background: #ffc700;
+	text-align: left;
+	padding-bottom: 20px;
+}
+#codeSender {
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px solid white;
+	color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+	background: #0085ff;
+	font-size: 20px;
+}
+#copy {
+	display: block;
+	margin-left: 10px;
+	margin-top: 10px;
+	background: #0085ff;
+	color: white;
+	border: transparent;
+	font-size: 20px;
+}
+#containerForYesCode {
+	display: contents;
+}
+#goBackMenuButton {
+	display: block;
+	text-align: left;
+	background: #ffc700;
+	border: transparent;
+}
+#goBackMenuButtonImg {
+	background: #ffc700;
 }

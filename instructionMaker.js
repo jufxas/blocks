@@ -10,8 +10,9 @@ export let twoLetterCols = {
 		rgb: "rgb(128, 0, 128)",
 	},
 	lightBlue: {
-		short: "lb",
-		split: ["l", "b"],
+		// doing b/lb/ would interpret to /bl/b instead of black light-blue
+		short: "lc",
+		split: ["l", "c"],
 		cssCol: "skyblue",
 		rgb: "rgb(135, 206, 235)",
 	},
@@ -23,15 +24,16 @@ export let twoLetterCols = {
 	},
 };
 export let oneLetterCols = {
-	red: ["r", "red", "rgb(255,0,0)"],
-	orange: ["o", "orange", "rgb(255,165,0)"],
-	yellow: ["y", "yellow", "rgb(255,255,0)"],
-	green: ["g", "green", "rgb(0,128,0)"],
-	blue: ["b", "blue", "rgb(0,0,255)"],
-	indigo: ["i", "indigo", "rgb(75,0,130)"],
-	violet: ["v", "violet", "rgb(238,130,238)"],
-	white: ["w", "white", "rgb(255,255,255)"],
-	none: ["n", "transparent", "rgba(0,0,0,0)"],
+	//  SPACING REQUIRED !!!
+	red: ["r", "red", "rgb(255, 0, 0)"],
+	orange: ["o", "orange", "rgb(255, 165, 0)"],
+	yellow: ["y", "yellow", "rgb(255, 255, 0)"],
+	green: ["g", "green", "rgb(0, 128, 0)"],
+	blue: ["b", "blue", "rgb(0, 0, 255)"],
+	indigo: ["i", "indigo", "rgb(75, 0, 130)"],
+	violet: ["v", "violet", "rgb(238, 130, 238)"],
+	white: ["w", "white", "rgb(255, 255, 255)"],
+	none: ["n", "transparent", "rgba(0, 0, 0, 0)"],
 	default: ["d", "default"], // default outer = black, default inner = none
 };
 
