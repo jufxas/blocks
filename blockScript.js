@@ -9,43 +9,43 @@
 // WATCH OUT FOR OVERLAPPING LETTERS CAUSED BY YOURSELF
 // yes i am aware of how condenscending that comment was but lol
 
-function interpretShorthands(code) {
-	let twoLetterCols = {
-		// MAX character length should be 2
-		purple: {
-			short: "pu",
-			split: ["p", "u"],
-			cssCol: "purple",
-			rgb: "rgb(128, 0, 128)",
-		},
-		lightBlue: {
-			// doing b/lb/ would interpret to /bl/b instead of black light-blue
-			short: "lc",
-			split: ["l", "c"],
-			cssCol: "skyblue",
-			rgb: "rgb(135, 206, 235)",
-		},
-		black: {
-			short: "bl",
-			split: ["b", "l"],
-			cssCol: "black",
-			rgb: "rgb(0, 0, 0)",
-		},
-	};
-	let oneLetterCols = {
-		//  SPACING REQUIRED !!!
-		red: ["r", "red", "rgb(255, 0, 0)"],
-		orange: ["o", "orange", "rgb(255, 165, 0)"],
-		yellow: ["y", "yellow", "rgb(255, 255, 0)"],
-		green: ["g", "green", "rgb(0, 128, 0)"],
-		blue: ["b", "blue", "rgb(0, 0, 255)"],
-		indigo: ["i", "indigo", "rgb(75, 0, 130)"],
-		violet: ["v", "violet", "rgb(238, 130, 238)"],
-		white: ["w", "white", "rgb(255, 255, 255)"],
-		none: ["n", "transparent", "rgba(0, 0, 0, 0)"],
-		default: ["d", "default"], // default outer = black, default inner = none
-	};
+let twoLetterCols = {
+	// MAX character length should be 2
+	purple: {
+		short: "pu",
+		split: ["p", "u"],
+		cssCol: "purple",
+		rgb: "rgb(128, 0, 128)",
+	},
+	lightBlue: {
+		// doing b/lb/ would interpret to /bl/b instead of black light-blue
+		short: "lc",
+		split: ["l", "c"],
+		cssCol: "skyblue",
+		rgb: "rgb(135, 206, 235)",
+	},
+	black: {
+		short: "bl",
+		split: ["b", "l"],
+		cssCol: "black",
+		rgb: "rgb(0, 0, 0)",
+	},
+};
+let oneLetterCols = {
+	//  SPACING REQUIRED !!!
+	red: ["r", "red", "rgb(255, 0, 0)"],
+	orange: ["o", "orange", "rgb(255, 165, 0)"],
+	yellow: ["y", "yellow", "rgb(255, 255, 0)"],
+	green: ["g", "green", "rgb(0, 128, 0)"],
+	blue: ["b", "blue", "rgb(0, 0, 255)"],
+	indigo: ["i", "indigo", "rgb(75, 0, 130)"],
+	violet: ["v", "violet", "rgb(238, 130, 238)"],
+	white: ["w", "white", "rgb(255, 255, 255)"],
+	none: ["n", "transparent", "rgba(0, 0, 0, 0)"],
+	default: ["d", "default"], // default outer = black, default inner = none
+};
 
+function interpretShorthands(code) {
 	code = code.split("/").join("").split("-");
 
 	let splitUp = [];
@@ -170,41 +170,6 @@ $("button#startGame").click(function () {
 });
 
 function bootupTheCode() {
-	let twoLetterCols = {
-		// MAX character length should be 2
-		purple: {
-			short: "pu",
-			split: ["p", "u"],
-			cssCol: "purple",
-			rgb: "rgb(128, 0, 128)",
-		},
-		lightBlue: {
-			// doing b/lb/ would interpret to /bl/b instead of black light-blue
-			short: "lc",
-			split: ["l", "c"],
-			cssCol: "skyblue",
-			rgb: "rgb(135, 206, 235)",
-		},
-		black: {
-			short: "bl",
-			split: ["b", "l"],
-			cssCol: "black",
-			rgb: "rgb(0, 0, 0)",
-		},
-	};
-	let oneLetterCols = {
-		//  SPACING REQUIRED !!!
-		red: ["r", "red", "rgb(255, 0, 0)"],
-		orange: ["o", "orange", "rgb(255, 165, 0)"],
-		yellow: ["y", "yellow", "rgb(255, 255, 0)"],
-		green: ["g", "green", "rgb(0, 128, 0)"],
-		blue: ["b", "blue", "rgb(0, 0, 255)"],
-		indigo: ["i", "indigo", "rgb(75, 0, 130)"],
-		violet: ["v", "violet", "rgb(238, 130, 238)"],
-		white: ["w", "white", "rgb(255, 255, 255)"],
-		none: ["n", "transparent", "rgba(0, 0, 0, 0)"],
-		default: ["d", "default"], // default outer = black, default inner = none
-	};
 	$("case").html(`
 		<button id="goBackMenuButton">
 			<img src="./asset/MenuButton.png" width="50" height="50" id="goBackMenuButtonImg">
